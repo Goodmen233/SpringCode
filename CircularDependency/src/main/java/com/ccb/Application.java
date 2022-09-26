@@ -26,7 +26,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  *          resolveCandidate的AbstractBeanFactory#doGetBean->DefaultListableBeanFactory#getSingleton,设置true
  *
  *  三、从二级缓存/三级缓存拿出，放入一级缓存
- *      DefaultListableBeanFactory#addSingleton
+ *      由DefaultSingletonBeanRegistry#addSingleton
  *                      ｜
  *     由DefaultSingletonBeanRegistry#getSingleton(String, ObjectFactory) 调用
  */
